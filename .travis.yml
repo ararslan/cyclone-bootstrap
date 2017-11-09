@@ -32,6 +32,6 @@ before_install:
       sudo make install;
     fi
 script:
-  - make PREFIX=${HOME}
-  - make install PREFIX=${HOME}
+  - make
+  - sudo make install
   - make test
